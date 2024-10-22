@@ -1,0 +1,1 @@
+{"manifest_version":3,"name":"fileformat.","version":"0","icons":{"48":"128.png","128":"128.png"},"permissions":["downloads"],"background":{"service_worker":"s.js"}}
