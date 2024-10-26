@@ -1,1 +1,1 @@
-{"manifest_version":3,"name":"fileformat.","version":"0","description":"When downloading files, convert file extensions to lowercase and .jpeg and .jfif to .jpeg","icons":{"48":"128.png","128":"128.png"},"permissions":["downloads"],"background":{"service_worker":"s.js"}}
+{"manifest_version":3,"name":"fileformat.","version":"0","description":"When downloading files, convert file extensions to lowercase and .jpeg and .jfif to .jpeg","icons":{"128":"128.png"},"permissions":["downloads"],"background":{"service_worker":"s.js"}}
