@@ -1,1 +1,1 @@
-{let c=chrome,d=c.downloads.onDeterminingFilename,f=(s,f)=>f({filename:(s=s.filename).slice(0,((s=s.slice(f=s.lastIndexOf(".")).toLowerCase()),f))+(s==".jpeg"||s==".jfif"?".jpg":s)});c.runtime.onConnectExternal.addListener(p=>(p.onDisconnect.addListener(()=>d.addListener(f)),d.removeListener(f))),d.addListener(f)}
+chrome.downloads.onDeterminingFilename.addListener((s,f)=>f({filename:(s=s.filename).slice(0,((s=s.slice(f=s.lastIndexOf(".")).toLowerCase()),f))+(s==".jpeg"||s==".jfif"?".jpg":s)}))
