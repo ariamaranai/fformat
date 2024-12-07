@@ -10,6 +10,6 @@
     "downloads"
   ],
   "background": {
-    "service_worker":"s.js"
+    "service_worker":"bg.js"
   }
 }
