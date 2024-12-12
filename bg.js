@@ -1,3 +1,8 @@
-chrome.downloads.onDeterminingFilename.addListener((s, f)=>
-  f({filename: (s = s.filename).slice(0, ((s = s.slice(f = s.lastIndexOf(".")).toLowerCase()), f)) + (s == ".jpeg" || s == ".jfif" ? ".jpg" : s)})
-)
+chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
+  let filename = item.filename;
+  let pos = filename.lastIndexOf(".");
+  let format = filename.slice(pos).toLowerCase();
+  suggest({
+    filename: filename.slice(0, pos) + (format == ".jpeg" || format == ".jfif" ? ".jpg" : format)
+  });
+});
