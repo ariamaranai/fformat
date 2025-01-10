@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "fformat",
   "version": "0",
-  "description": "Filename to Lowercase and .jpeg/.jfif => .jpg",
+  "description": "Filename to lowercase and .jpeg/.jfif => .jpg",
   "icons": {
     "128": "128.png"
   },
