@@ -1,4 +1,3 @@
-
 chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
   if (!item.byExtensionId) {
     let filename = item.filename;
