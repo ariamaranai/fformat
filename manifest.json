@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "fformat",
   "version": "0",
-  "description": "Filename to lowercase and .jpeg/.jfif => .jpg",
+  "description": "Convert filenames to lowercase and .jpeg/.jfif to .jpg",
   "icons": {
     "128": "128.png"
   },
