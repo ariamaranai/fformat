@@ -1,9 +1,10 @@
 chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
-  if (!item.byExtensionId) {
-    let filename = item.filename;
-    let p = filename.lastIndexOf(".");
-    let format = filename.slice(p).toLowerCase();
-    suggest({ filename: filename.slice(0, p) + (format == ".jpeg" || format == ".jfif" ? ".jpg" : format) });
-  }
+  item.byExtensionId ||
+  suggest({
+    filename: filename.replace(/\.[^.]+$/, e => {
+      let s = e.toLowerCase();
+      return s != ".jpeg" && s != ".jfif" ? s : ".jpg";
+    })
+  });
   return !0
 });
