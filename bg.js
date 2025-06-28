@@ -7,6 +7,6 @@ chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
         return s != ".jpeg" && s != ".jfif" ? s : ".jpg";
       })
     })
-  } catch (e) {}
+  } catch {}
   return !0
 });
