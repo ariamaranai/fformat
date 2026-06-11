@@ -1,6 +1,6 @@
 chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
   try {
-    item.byExtensionId ||
+    return item.byExtensionId ||
     suggest({
       filename: item.filename.replace(/\.[^.]+$/, e => {
         let s = e.toLowerCase();
@@ -8,5 +8,4 @@ chrome.downloads.onDeterminingFilename.addListener((item, suggest) => {
       })
     })
   } catch {}
-  return !0
 });
