@@ -4,7 +4,7 @@ onunhandledrejection = e => e.preventDefault();
   let f = (item, suggest) =>
     item.byExtensionId
       ? (
-        downloads.onDeterminingFilename.removeListener(f1),
+        downloads.onDeterminingFilename.removeListener(f),
         !0
       )
       : suggest({
